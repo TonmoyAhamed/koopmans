@@ -1,0 +1,285 @@
+/*  Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .logo {
+        width: 140px;
+    }
+    .banner-slider .owl-dots{
+        display: none;
+    }
+    .banner-content h2 {
+        font-size: 30px;
+    }
+    .service {
+        padding: 50px 0;
+    }
+    .service::before {
+        height: 228px;
+    }
+    .service-heading h1 {
+        font-size: 30px;
+    }
+    .service-heading h2 {
+        font-size: 16px;
+        margin-bottom: 60px;
+        line-height: 25px;
+    }
+    .service-box {
+        margin-top: 20px;
+    }
+    .project {
+        padding: 40px 0;
+    }
+    .project-heading {
+        margin-bottom: 40px;
+    }
+    .project-heading ul li {
+        margin: 0 10px;
+    }
+    section.team::before{
+        display: none;
+    }
+    .team {
+        padding: 40px 0;
+    }
+    .team-pad {
+        padding: 0;
+    }
+    footer {
+        padding: 40px 0 40px 0;
+    }
+    .footer-social-icon {
+        margin-top: 50px;
+    }
+    .footer-social-icon ul li a {
+        font-size: 11px;
+    }
+    .page2-banner-content h1 {
+        font-size: 30px;
+        margin-bottom: 18px;
+    }
+    .page2-banner {
+        padding: 100px 0 50px 0;
+    }
+    .page2-banner-content p {
+        margin-bottom: 25px;
+    }
+    .service2 {
+        padding: 50px 0;
+    }
+    .service-2-content h2 {
+        font-size: 30px;
+    }
+    .service-2-content a {
+        margin-bottom: 20px;
+    }
+    .service-2-content {
+        text-align: center !important;
+    }
+    .team2 {
+        padding: 50px 0;
+    }
+    .project-2 {
+        padding-top: 180px;
+    }
+    .general-banner-content h1 {
+        font-size: 30px;
+    }
+    .general-banner-content p {
+        padding: 0;
+    }
+    .general-banner-content {
+        margin-top: 34%;
+    }
+    .video-content {
+        margin-top: 20px;
+    }
+    .video-sec {
+        padding: 60px 0;
+    }
+    .video-btm-content h1 {
+        font-size: 30px;
+    }
+    .video-btm-content h2 {
+        margin: 25px 0;
+    }
+    .project-details-heading h2 {
+        font-size: 30px;
+    }
+    .project-details-heading {
+        margin-bottom: 20px;
+    }
+    .project-categorie h2::before{
+        display: none;
+    }
+    .project-categorie h2 {
+        text-align: left;
+    }
+    .project-categorie h3 {
+        text-align: left;
+    }
+    .project-banner-right {
+        margin-top: 20px;
+    }
+    .loadmore {
+        padding: 60px 0 29px 0;
+    }
+    .loadmore-btn2 {
+        margin: 20px 0;
+    }
+    .project-banner {
+        padding-top: 150px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .logo {
+        width: 140px;
+    }
+    .banner-slider .owl-dots{
+        display: none;
+    }
+    .banner-content h2 {
+        font-size: 30px;
+    }
+    .service {
+        padding: 50px 0;
+    }
+    .service::before {
+        height: 228px;
+    }
+    .service-heading h1 {
+        font-size: 30px;
+    }
+    .service-heading h2 {
+        font-size: 16px;
+        margin-bottom: 60px;
+        line-height: 25px;
+    }
+    .service-box {
+        margin-top: 20px;
+    }
+    .project {
+        padding: 40px 0;
+    }
+    .project-heading {
+        margin-bottom: 40px;
+    }
+    .project-heading ul li {
+        margin: 0 10px;
+    }
+    section.team::before{
+        display: none;
+    }
+    .team {
+        padding: 40px 0;
+    }
+    .team-pad {
+        padding: 0;
+    }
+    footer {
+        padding: 40px 0 40px 0;
+    }
+    .footer-social-icon {
+        margin-top: 50px;
+    }
+    .footer-social-icon ul li a {
+        font-size: 11px;
+    }
+    .page2-banner-content h1 {
+        margin-bottom: 28px;
+    }
+    .page2-banner-content p {
+        margin-bottom: 15px;
+    }
+    .service-btm p {
+        margin: 20px 0;
+    }
+    .service2 {
+        padding: 50px 0;
+    }
+    .service-2-content h2 {
+        font-size: 35px;
+    }
+    .service-2-content a {
+        margin-bottom: 20px;
+    }
+    .team2 {
+        padding: 50px 0;
+    }
+    .project-2 {
+        padding-top: 180px;
+    }
+    .general-banner-content h1 {
+        font-size: 40px;
+    }
+    .general-banner-content p {
+        font-size: 18px;
+        margin-top: 16px;
+    }
+    .video-content {
+        margin-top: 25px;
+    }
+    .video-btm-content h1 {
+        font-size: 40px;
+    }
+    .video-btm-content h2 {
+        margin: 30px 0;
+    }
+    .project-categorie h2::before{
+        display: none;
+    }
+    .project-categorie h2 {
+        text-align: left;
+    }
+    .project-categorie h3 {
+        text-align: left;
+    }
+    .project-details-heading {
+        margin-bottom: 20px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .logo {
+        width: 140px;
+    }
+    .service-box {
+        padding: 65px 10px;
+    }
+    .service::before {
+        height: 878px;
+    }
+    .team-pad {
+        padding: 0 65px;
+    }
+    .page2-banner-content h1 {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    .page2-banner-content {
+        margin-top: 0;
+    }
+    .service-heading h1 {
+        font-size: 40px;
+    }
+    .service-2-content {
+        margin-top: 0;
+    }
+    .project-details-slider::before {
+        height: 1430px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .logo {
+        width: 167px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+}

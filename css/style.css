@@ -1,0 +1,908 @@
+@font-face {
+    font-family: 'MrEavesXLModOT-Reg';
+    src: url("../font/MrEavesXLModOT-Reg.ttf");
+}
+
+@font-face {
+    font-family: 'MrEavesXLModOT-Book';
+    src: url("../font/MrEavesXLModOT-Book.ttf");
+}
+
+@font-face {
+    font-family: 'MrEavesXLModNarOT-Heavy';
+    src: url("../font/MrEavesXLModNarOT-Heavy.ttf");
+}
+
+@font-face {
+    font-family: 'MrEavesXLModOT-Light';
+    src: url("../font/MrEavesXLModOT-Light.ttf");
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'MrEavesXLModOT-Reg';
+    background-color: #000;
+    color: #fff;
+}
+.pad-0{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+.wd-100{
+    width: 100%;
+}
+/*======================
+header start
+=======================*/
+header {
+    background: #000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999999999;
+    padding: 12px 0;
+}
+.header-logo{
+    width: 180px;
+}
+.header-logo a.logo{
+    
+    
+}
+.menu-icon {
+    position: relative;
+}
+.menu-icon a.toggles {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+}
+.menu{
+
+}
+.menu li {
+    margin-right: 9px;
+}
+.menu li a{
+    color: #fff !important;
+    font-family: 'MrEavesXLModNarOT-Heavy';
+    font-size: 18px;
+}
+.nav-button{
+
+}
+.nav-button a {
+    color: #fff !important;
+    background-color: #2a0e36;
+    font-family: 'MrEavesXLModNarOT-Heavy';
+    font-size: 24px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.nav-button a span{
+    font-family: 'MrEavesXLModOT-Light';
+    
+}
+.bd-none{
+    outline: none !important;
+    color: transparent !important;
+    border-color: transparent !important;
+}
+#dropdown-menu-color{
+
+}
+#dropdown-menu-color a{
+    color: #000 !important;
+}
+/*======================
+header end
+=======================*/
+
+/*======================
+banner start
+=======================*/
+.banner{
+    position: relative;
+}
+.banner-btm-social {
+    position: absolute;
+    bottom: 0;
+    right: 4%;
+    z-index: 99999;
+}
+.banner-social-heading {
+    margin-bottom: 9px;
+    text-align: center;
+}
+.banner-social-heading span {
+    margin-left: 10px;
+}
+.banner-btm-social-icon{
+    display: none;
+    transition: all .4s linear;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -ms-transition: all .4s linear;
+    -o-transition: all .4s linear;
+}
+.banner-btm-social:hover .banner-btm-social-icon {
+    display: block;
+}
+.banner-btm-social-icon ul{
+    
+}
+.banner-btm-social-icon ul li {
+    margin: 0 5px;
+}
+.banner-btm-social-icon ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.banner-slider {
+    cursor: grab;
+}
+.banner-silngle-item{
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 100vh;
+   min-height: 100vh; 
+}
+.banner-content {
+    color: #fff;
+    margin-top: 30%;
+}
+.banner-content h2{
+    font-size: 60px;
+    font-family: 'MrEavesXLModNarOT-Heavy';
+}
+.banner-content h2 span{
+    font-family: 'MrEavesXLModOT-Book';
+}
+.banner-content h6 {
+    font-size: 18px;
+    font-family: 'MrEavesXLModOT-Book';
+    margin: 25px 0 78px 0px;
+}
+.banner-content a {
+    font-size: 18px;
+    background-color: #2a0e36;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 7px 23px;
+}
+.banner-slider .owl-dots {
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
+}
+.banner-slider .owl-dots .owl-dot span{
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+}
+.banner-slider .owl-dots .owl-dot.active span{
+    font-size: 40px;
+    transition: all .4s linear;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -ms-transition: all .4s linear;
+    -o-transition: all .4s linear;
+}
+.banner-slider.owl-carousel .owl-nav {
+    position: absolute;
+    left: 4%;
+    bottom: 0;
+}
+.banner-slider.owl-carousel .owl-nav button.owl-prev {
+    font-size: 60px;
+    margin-right: 40px;
+    outline: none;
+}
+.banner-slider.owl-carousel .owl-nav button.owl-next {
+    font-size: 60px;
+    outline: none;
+}
+.owl-item.active .banner-silngle-item .banner-content {
+    animation: banner-animate .4s ease-in-out  1;
+    -webkit-animation: banner-animate .4s ease-in-out  1;
+}
+@keyframes banner-animate{
+    0%{
+        transform: translateY(30%);
+        -webkit-transform: translateY(30%);
+        -moz-transform: translateY(30%);
+        -ms-transform: translateY(30%);
+        -o-transform: translateY(30%);
+        opacity: 0;
+}
+    100%{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        opacity: 1;
+}
+}
+/*======================
+banner end
+=======================*/
+
+/*======================
+service
+=======================*/
+.service{
+    position: relative;
+    padding: 80px 0;
+}
+.service::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1080px;
+    background: url('../images/shape1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.service-heading{
+
+}
+.service-heading h1{
+    font-size: 60px;
+    font-family: 'MrEavesXLModNarOT-Heavy';
+}
+.service-heading h1 span{
+    font-family: 'MrEavesXLModOT-Book';
+}
+.service-heading h2 {
+    font-size: 21px;
+    margin-bottom: 100px;
+    line-height: 35px;
+}
+.service-box {
+    border: 1px solid #fff;
+    padding: 65px 26px;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+.service-box:hover {
+    background-color: #1e0a27c7;
+    border-color: #4c1a61;
+}
+.service-box img{
+    width: 95px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.service-box h2 {
+    margin: 18px 0;
+    font-size: 32px;
+}
+.service-box p{
+    margin: 0;
+    font-size: 18px;
+}
+/*======================
+service end
+=======================*/
+
+/*======================
+project start
+=======================*/
+.project{
+    padding: 80px 0;
+    overflow: hidden;
+}
+.project-heading {
+    margin-bottom: 80px;
+}
+.project-heading ul{
+}
+.project-heading ul li {
+    margin: 0 50px;
+}
+.project-menu{
+
+}
+.project-menu li{
+    cursor: pointer;
+}
+/*======================
+project end
+=======================*/
+
+/*======================
+team start
+=======================*/
+.team{
+    padding: 80px 0;
+    position: relative;
+}
+section.team::before {
+    display: none;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1080px;
+    background: url(../images/shape2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.team-pad {
+    padding: 0 100px;
+}
+.team-box {
+    border: 1px solid transparent;
+    background-color: #1e0a27c7;
+    padding: 65px 6px;
+}
+.team-social-icon {
+    margin-top: 40px;
+}
+.soical-1 {
+    margin-top: 13px;
+}
+/*======================
+team end
+=======================*/
+/*======================
+footer start
+=======================*/
+footer {
+    padding: 100px 0 60px 0;
+    background: linear-gradient(220deg, rgba(253,217,2,1) 0%, rgba(247,173,4,1) 30%, rgba(221,62,12,1) 100%);
+}
+.footer-heading{
+
+}
+.footer-heading h2{
+    font-size: 30px;
+    font-family: 'MrEavesXLModNarOT-Heavy';
+}
+.footer-heading h2 span{
+    font-family: 'MrEavesXLModOT-Book';
+}
+.footer-heading h3 {
+    font-size: 22px;
+    margin: 20px 0 0 0;
+}
+.footer-social-icon {
+    margin-top: 140px;
+}
+.footer-social-icon ul{
+    
+}
+.footer-social-icon ul li{
+    
+}
+.footer-social-icon ul li a {
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid #fff;
+    padding: 10px 10px 10px 10px;
+}
+.footer-social-icon ul li a i{
+    
+}
+/*======================
+footer end
+=======================*/
+
+/*======================
+footer bottom start
+=======================*/
+.f-bottom {
+    padding: 35px 0;
+}
+.copyright{
+
+}
+.copyright p{
+    margin: 0;
+}
+/*======================
+footer bottom end
+=======================*/
+
+/*======================
+over-ons.html start
+=======================*/
+/*banner*/
+.page2-banner {
+    padding: 160px 0 80px 0;
+}
+.page2-banner-content {
+    margin-top: 49px;
+}
+.page2-banner-content h1 {
+    font-size: 60px;
+    font-family: 'MrEavesXLModNarOT-Heavy';
+    line-height: 50px;
+    margin-bottom: 28px;
+}
+.page2-banner-content h1 span{
+    font-family: 'MrEavesXLModOT-Book';
+}
+.page2-banner-content p{
+    margin: 0;
+}
+.page2-banner-slider2 .owl-dots button.owl-dot {
+    width: 10px;
+    height: 10px;
+    background: #afafaf;
+    margin: 0 3px;
+    outline: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.page2-banner-slider2 .owl-dots {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: 0;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.page2-banner-slider2 .owl-dots button.owl-dot.active {
+    background: #4c1a61;
+}
+/*service*/
+.service-slider .owl-nav button {
+    font-size: 32px !important;
+}
+.service-slider .owl-nav button.owl-prev {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    outline: none;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.service-slider .owl-nav button.owl-next {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    outline: none;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.service-btm {
+    margin-top: 50px;
+}
+.service-btm h2{
+    font-size: 24px;
+    font-family: 'MrEavesXLModNarOT-Heavy';
+    margin: 0;
+}
+.service-btm p {
+    font-size: 15px;
+    padding: 0 356px;
+    margin: 20px 0;
+}
+.service-btm a {
+    background-color: #170325;
+    color: #fff;
+    padding: 12px 35px;
+    display: inline-block;
+    text-decoration: none;
+}
+.service2{
+    padding: 80px 0;
+    position: relative;
+}
+.service2::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 40%;
+    background: url('../images/shape3.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 411px;
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+}
+.service-2-img{
+
+}
+.service-2-content {
+    margin-top: 16px;
+}
+.service-2-content h2{
+    font-family: 'MrEavesXLModNarOT-Heavy';
+    font-size: 48px;
+}
+.service-2-content p{
+    
+}
+.service-2-content a{
+    background-color: #170325;
+    color: #fff;
+    padding: 12px 35px;
+    display: inline-block;
+    text-decoration: none;
+}
+/*team 2*/
+.team2{
+    padding: 80px 0;
+}
+.team-mb{
+    margin-bottom: 20px;
+}
+.service-box.team2-slider-item {
+    padding: 65px 54px 90px 54px;
+    background-color: #1e0a27c7;
+    border-color: #1e0a27c7;
+}
+.service-box.team2-slider-item h2 {
+    margin: 18px 0 0 0;
+    font-size: 32px;
+}
+.service-box.team2-slider-item span {
+    display: block;
+    margin: 0 0 20px 0;
+}
+.team2-slider-item img{
+    width: 95px !important;
+    margin: auto;
+}
+.team2-slider .owl-dots {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: 0;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.team2-slider .owl-dots button.owl-dot {
+    width: 10px;
+    height: 10px;
+    background: #afafaf;
+    margin: 0 3px;
+    outline: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.team2-slider .owl-dots button.owl-dot.active {
+    background: #4c1a61;
+}
+/*======================
+over-ons.end
+=======================*/
+
+/*======================
+overview.html start
+=======================*/
+.project-2 {
+    padding-top: 180px;
+    position: relative;
+}
+.project-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/shape4.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 423px;
+    background-size: cover;
+    background-position: center;
+}
+/*======================
+overview.html .end
+=======================*/
+
+/*======================
+general.html start
+=======================*/
+.general-banner{
+    background-image: url('../images/bg4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+}
+.general-banner-content {
+    margin-top: 27%;
+}
+.general-banner-content h1{
+    font-size: 60px;
+    font-family: 'MrEavesXLModNarOT-Heavy';
+}
+.general-banner-content h1 span{
+    font-family: 'MrEavesXLModOT-Book'
+}
+.general-banner-content p {
+    font-size: 21px;
+    margin-top: 35px;
+    padding: 0 90px;
+}
+.video-sec{
+    padding: 80px 0;
+    position: relative;
+}
+.video-sec::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 100%;
+    height: 1550px;
+    background: url(../images/shape5.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.video-youtube{
+    position: relative;
+}
+.video-youtube img{
+
+}
+.video-overlay{
+
+}
+.video-overlay a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    background: #5f3c6ed1;
+    height: 55px;
+    width: 55px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: 4px solid #4c1a61;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.video-content{
+
+}
+.video-content{
+    
+}
+.video-content p {
+    line-height: 30px;
+}
+.video-content h2{
+    font-size: 29px;
+    font-family: 'MrEavesXLModNarOT-Heavy';
+}
+.video-content ul {
+    padding-left: 16px;
+}
+.video-content ul li {
+    line-height: 30px;
+}
+.video-btm {
+    background: #2a0e368c;
+    padding: 60px 0;
+    position: relative;
+}
+.video-btm-content{
+
+}
+.video-btm-content h1{
+    font-size: 60px;
+    font-family: 'MrEavesXLModNarOT-Heavy';
+    margin: 0;
+}
+.video-btm-content h1 span{
+    font-family: 'MrEavesXLModNarOT-Book';
+}
+.video-btm-content h2 {
+    font-family: 'MrEavesXLModOT-Reg';
+    font-size: 21px;
+    margin: 45px 0;
+}
+.video-btm-content a {
+    font-size: 19px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 6px 12px;
+}
+/*======================
+general.html .end
+=======================*/
+
+/*======================
+prokect-details.html start
+=======================*/
+.project-banner {
+    padding-top: 180px;
+    position: relative;
+}
+.project-banner::before {
+    content: '';
+    width: 100%;
+    height: 678px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../images/shape1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.project-details-heading {
+    margin-bottom: 170px;
+}
+.project-details-heading h2{
+    font-size: 48px;
+    font-family: 'MrEavesXLModNarOT-Heavy';
+    text-align: center;
+
+}
+.project-details-heading p{
+
+}
+.project-categorie{
+
+}
+.project-categorie h2{
+    font-family: 'MrEavesXLModNarOT-Heavy';
+    font-size: 24px;
+    position: relative;
+}
+.project-categorie h2::before {
+    content: '';
+    width: 3px;
+    height: 30px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: -53px;
+    transform: translate(-50%, -50%);
+}
+.project-categorie h3{
+    font-size: 24px;
+    font-family: 'MrEavesXLModOT-Reg';
+    margin: 0;
+}
+.banner-social-icon {
+    margin-top: 55px;
+}
+.banner-bottom{
+
+}
+.banner-bottom h2 {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'MrEavesXLModNarOT-Heavy';
+    margin: 40px 0 25px 0;
+}
+.project-banner-right{
+
+}
+.project-banner-right h2 {
+    font-size: 24px;
+    font-family: 'MrEavesXLModNarOT-Heavy';
+    margin-top: 30px;
+}
+.project-banner-right p{
+}
+.project-details-slider{
+    position: relative;
+}
+.project-details-slider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 100%;
+    height: 1550px;
+    background: url(../images/shape5.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+.project-banner-slider .owl-nav button.owl-prev {
+    font-size: 40px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    outline: none;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.project-banner-slider .owl-nav button.owl-next {
+    font-size: 40px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    outline: none;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.banner-btm-2{
+
+}
+.banner-btm-2-content{
+
+}
+.banner-btm-2-content h2{
+    font-size: 24px;
+    font-family: 'MrEavesXLModNarOT-Heavy';
+}
+.banner-btm-2-content p {
+    margin-bottom: 25px;
+}
+.loadmore {
+    padding: 150px 0 29px 0;
+}
+.loadmore-btn1{
+
+}
+.loadmore-btn1 a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 3px 37px;
+    font-size: 24px;
+}
+/*======================
+prokect-details.html end
+=======================*/
